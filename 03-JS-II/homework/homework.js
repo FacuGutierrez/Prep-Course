@@ -5,6 +5,8 @@ function obtenerMayor(x, y) {
   // Devuelve el número más grande
   // Si son iguales, devuelve cualquiera de los dos
   // Tu código:
+  if (x === y) {return x || y
+  }
   if (x > y) {return x;}
   if (y > x) {return y;}
   return
@@ -143,7 +145,7 @@ function tablaDelSeis(){
   //La función devuelve un array con los resultados de la tabla de multiplicar del 6 en orden creciente.
   //Escribe tu código aquí 
   let ArrayTablaDel6 = []
-  for (let i = 0; i > 60; i++) {
+  for (let i = 0; i < 11; i++) {
     ArrayTablaDel6.push (i*6);
   }
   return ArrayTablaDel6;
@@ -161,7 +163,14 @@ function doWhile(numero) {
   //Implementar una función tal que vaya aumentando el valor recibido en 5 hasta un límite de 8 veces
   //Retornar el valor final.
   //Usar el bucle do ... while.
-
+  var a = numero
+  var i = 0
+  do {
+    i = i + 1
+    a = a + 5;
+}
+while (i < 8)
+return a;
 }
 
 
